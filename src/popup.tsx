@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
+import './assets/styles/tailwind.css'
 
 const Popup = () => {
   const [count, setCount] = useState(0);
@@ -45,6 +46,7 @@ const Popup = () => {
         count up
       </button>
       <button onClick={changeBackground}>change background</button>
+      <p className="text-red-500">Styled by TailwindCSS</p>
     </>
   );
 };
